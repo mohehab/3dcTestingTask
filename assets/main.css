@@ -1,0 +1,80 @@
+/* Logo Style */
+.NuxtLogo {
+    animation: 1s appear;
+    margin: auto;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+}
+
+/* General Styles */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 50px auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  /* TEXT STYLE */
+  .title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 50px;
+    color: #35495e;
+    letter-spacing: 1px;
+  }
+  
+  .subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+  }
+  
+  .links {
+    padding-top: 15px;
+  }
+
+  /* Cards Style */
+    .card {
+        max-width: 20rem;
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.6rem;
+        overflow: hidden;
+      }
+    
+    .card-img-top {
+        min-width: 318px;
+        min-height: 318px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+  /* Animation (Transition) */
+  .home-enter-active,
+  .home-leave-active {
+    transition: opacity 0.5s;
+  }
+  .home-enter,
+  .home-leave-active {
+    opacity: 0;
+  }
